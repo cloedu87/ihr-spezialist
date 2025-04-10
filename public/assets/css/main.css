@@ -3589,7 +3589,7 @@ input, select, textarea {
 
 		.hero-image img {
 			width: 100%;
-			max-width: 20rem;
+			max-width: 18rem;
 		}
 
 		.hero-image {
@@ -3603,7 +3603,7 @@ input, select, textarea {
 				}
 
 				.hero-image {
-					max-width: 20rem;
+					max-width: 18rem;
 				}
 			}
 
