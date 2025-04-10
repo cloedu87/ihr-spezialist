@@ -2111,10 +2111,10 @@ input, select, textarea {
 		text-transform: uppercase;
 		white-space: nowrap;
 		font-size: 0.75rem;
-		max-width: 20rem;
+		/* max-width: 20rem; */
 		height: 3.75em;
 		line-height: 3.75em;
-		border-radius: 3.75em;
+		/* border-radius: 3.75em; */
 		padding: 0 2.5em;
 		text-overflow: ellipsis;
 		overflow: hidden;
@@ -2166,6 +2166,14 @@ input, select, textarea {
 		button.wide,
 		.button.wide {
 			min-width: 14em;
+		}
+
+		input[type="submit"].full,
+		input[type="reset"].full,
+		input[type="button"].full,
+		button.full,
+		.button.full {
+			width: 100%;
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2679,6 +2687,10 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+		.logo {
+			/* width: 1rem; */
+		}
 
 /* List */
 
@@ -3575,6 +3587,18 @@ input, select, textarea {
 
 		}
 
+		.hero-card {
+			text-align: right;
+		}
+
+			@media screen and (orientation: portrait) {
+				
+				.hero-card {
+					text-align: center;
+				}
+
+			}
+
 		.banner.style1.fullscreen {
 			min-height: 100vh;
 		}
@@ -3583,6 +3607,7 @@ input, select, textarea {
 
 				.banner.style1.fullscreen .content {
 					min-height: 50vh;
+
 				}
 
 				.banner.style1.fullscreen .image {
