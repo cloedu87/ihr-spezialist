@@ -3588,6 +3588,22 @@ input, select, textarea {
 				}
 
 		}
+		
+		.review-link {
+			text-decoration: none;
+			color: #000;
+			font-size: 1.25rem;
+			font-weight: 500;
+		}
+
+		.review-link:hover {
+			text-decoration: none;
+		}
+
+		.review-link i:hover {
+			text-decoration: none;
+			fill: #47D3E5;
+		}
 
 		.hero-image img {
 			width: 100%;
