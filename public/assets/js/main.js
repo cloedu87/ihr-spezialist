@@ -338,4 +338,16 @@
 
 						});
 
+	// To-Top Button visibility
+	$(window).scroll(function() {
+		var toTopButton = $('#toTopButton');
+		
+		// Show button when scrolled down 300px
+		if ($(this).scrollTop() > 300) {
+			toTopButton.addClass('show-button');
+		} else {
+			toTopButton.removeClass('show-button');
+		}
+	});
+
 })(jQuery);
