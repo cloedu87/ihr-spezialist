@@ -338,15 +338,24 @@
 
 						});
 
-	// To-Top Button visibility
+	// Scroll buttons visibility
 	$(window).scroll(function() {
 		var toTopButton = $('#toTopButton');
+		var toSectionButton = $('#toSectionButton');
+		var scrollTop = $(this).scrollTop();
 		
-		// Show button when scrolled down 300px
-		if ($(this).scrollTop() > 300) {
+		// To-Top Button: Show when scrolled down 300px
+		if (scrollTop > 300) {
 			toTopButton.addClass('show-button');
 		} else {
 			toTopButton.removeClass('show-button');
+		}
+		
+		// To-Section Button: Hide when scrolled down 100px
+		if (scrollTop > 100) {
+			toSectionButton.addClass('hide-button');
+		} else {
+			toSectionButton.removeClass('hide-button');
 		}
 	});
 
