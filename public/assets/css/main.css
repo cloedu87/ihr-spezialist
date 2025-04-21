@@ -3598,7 +3598,7 @@ input, select, textarea {
 			text-align: left;
 		}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (orientation: portrait) {
 				
 				.hero-image img {
 					max-width: 100%;
@@ -3606,6 +3606,7 @@ input, select, textarea {
 
 				.hero-image {
 					max-width: 18rem;
+					padding-top:5rem !important;
 				}
 			}
 
@@ -3618,8 +3619,9 @@ input, select, textarea {
 				
 				.hero-card {
 					text-align: center;
+					padding-top: 0px !important;
+    			padding-bottom: 5rem !important;
 				}
-
 			}
 
 		.banner.style1.fullscreen {
@@ -3630,7 +3632,6 @@ input, select, textarea {
 
 				.banner.style1.fullscreen .content {
 					min-height: 50vh;
-
 				}
 
 				.banner.style1.fullscreen .image {
