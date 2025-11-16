@@ -6415,6 +6415,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
   -webkit-transition-delay: 4.8s;
   -ms-transition-delay: 4.8s;
   transition-delay: 4.8s;
+  max-width: 100vw;
 }
 
 .gallery.onscroll-fade-in article:nth-child(1) .image img {
