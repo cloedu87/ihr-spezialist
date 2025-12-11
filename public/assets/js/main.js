@@ -136,7 +136,7 @@
   // Gallery.
   $(".gallery")
     .wrapInner('<div class="inner"></div>')
-    .prepend(browser.mobile ? "" : '<div class="forward"></div><div class="backward"></div>')
+    .prepend('<div class="forward"></div><div class="backward"></div>')
     .scrollex({
       top: "30vh",
       bottom: "30vh",
